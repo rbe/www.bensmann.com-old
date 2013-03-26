@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition template="layout.xhtml">
+
+    <ui:define name="content">
+
+        <div id="posts">
+            <div class="post">
+                <h2>Social Networks</h2>
+                <h3>
+                </h3>
+                <p>
+                    Sie finden mich auf folgenden Seiten:
+                </p>
+                <table width="100%">
+                    <tr>
+                        <td><h:outputLink target="_blank" href="http://www.github.com/rbe/">GitHub</h:outputLink></td>
+                        <td rowspan="14" align="right">
+                            <iframe src="http://www.facebook.com/plugins/likebox.php?id=109231032432556&amp;width=292&amp;connections=10&amp;stream=false&amp;header=true&amp;height=287" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:287px;" allowTransparency="true"></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 10px"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="http://irb.posterous.com/">Posterous</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 10px"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="http://www.twitter.com/ralfbn">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 10px"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="http://www.xing.com/profile/Ralf_Bensmann">XING</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 10px"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="http://www.facebook.com/profile/ralfbensmann">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 10px"></td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="http://www.linkedin.com/in/ralfbensmann">LinkedIn</a></td>
+                    </tr>
+                </table>
+                <div class="meta">
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <h2>Online</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink alt="Social Networks" value="social-networks.xhtml">Social Networks</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Offline</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink alt="Firmensitz" value="company-office.xhtml">Firmensitz</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </ui:define>
+
+</ui:composition>
+</html>

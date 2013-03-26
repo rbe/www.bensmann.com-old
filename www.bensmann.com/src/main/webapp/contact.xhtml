@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition template="layout.xhtml">
+
+    <ui:define name="content">
+
+        <div id="posts">
+            <div class="post">
+                <h2>Kontakt</h2>
+                <h3>
+                </h3>
+                <p>
+                    Mein Büro ist 24 Stunden und somit rund um die Uhr für Sie da!
+                </p>
+                <p>
+                    Sollten Sie mich wider erwarten nicht persönlich erreichen, hinterlassen Sie mir bitte eine Nachricht und ich werde mich umgehend mit Ihnen in Verbindung setzen. Alternativ können Sie eine der links angezeigten Kontaktmöglichkeiten nutzen.
+                </p>
+                <table>
+                    <tr>
+                        <td>Anschrift:</td>
+                        <td>Grüner Weg 23a, 48366 Laer</td>
+                    </tr>
+                    <tr>
+                        <td>Telefon:</td>
+                        <td>02554 912969-0</td>
+                    </tr>
+                    <tr>
+                        <td>Fax:</td>
+                        <td>02554 912969-4<br/></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><h:outputLink alt="Kontakt per Email" value="mailto:contact@bensmann.com">contact@bensmann.com</h:outputLink></td>
+                    </tr>
+                </table>
+                <div class="meta">
+                </div>
+            </div>
+            <p align="center"></p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <h2>Online</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink alt="Social Networks" value="social-networks.xhtml">Social Networks</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Offline</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink alt="Firmensitz" value="company-office.xhtml">Firmensitz</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </ui:define>
+
+</ui:composition>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:g="http://java.sun.com/jsf/html">
+<ui:composition template="layout.xhtml">
+
+    <ui:define name="content">
+
+        <div id="posts">
+            <div class="post">
+                <h2>Sun Certified Java Programmer</h2>
+                <h3>for Java 2 Platform Edition 5.0</h3>
+                <p>
+                    Im Jahr 2007 habe ich die Prüfung zum SCJP abgelegt. Diese Zertifizierung bestätigt meine, nicht zuletzt durch langjährige Erfahrung, erworbenen Kompetenzen sowie das daraus resultierende umfassende Know-how in der Programmiersprache Java.
+                </p>
+                <p>
+                    Eine Übersicht über die Inhalte dieser Zertifizierung erhalten Sie bei
+                    <h:outputLink target="_blank" value="http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=320" >bei Oracle</h:outputLink>.
+                </p>
+                <p>
+                    <h:graphicImage alt="SCJP" library="images" name="scjp_rbe.png"/>
+                </p>
+                <div class="meta">
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <h2>Leistungen</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink title="Referenzen" value="services-referee.xhtml">Referenzen</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Zertifizierungen</h2>
+                    <ul>
+                        <li>
+                            <h:outputLink title="SCJP" value="services-cert-scjp.xhtml">SCJP</h:outputLink>
+                        </li>
+                        <li>
+                            <h:outputLink title="Ausbilder (IHK)" value="services-cert-ihk.xhtml">Ausbilder (IHK)</h:outputLink>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </ui:define>
+
+</ui:composition>
+</html>

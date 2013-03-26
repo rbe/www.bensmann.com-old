@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:rbe="http://java.sun.com/jsf/composite/rbe">
+<h:head>
+    <title>Informationssysteme Ralf Bensmann</title>
+    <h:outputStylesheet library="css" name="style.css"/>
+    <meta name="google-site-verification" content="z29XFK9cy0pm9AXe0eEKZSVLhqoasd6qZeWe55CqOwQ" />
+</h:head>
+<h:body>
+    <div id="menu">
+        <ul>
+            <li class="current_page_item">
+                <h:outputLink title="Home" value="index.xhtml">Home</h:outputLink>
+            </li>
+            <li class="current_page">
+                <h:outputLink title="Leistungen" value="services.xhtml">Leistungen</h:outputLink>
+            </li>
+            <li class="current_page">
+                <h:outputLink title="Kontakt" value="contact.xhtml">Kontakt</h:outputLink>
+            </li>
+        </ul>
+    </div>
+    <div id="header">
+        <ui:insert name="header_image"/>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="900" height="180" id="tech" align="middle">
+            <param name="allowScriptAccess" value="sameDomain"/>
+            <param name="movie" value="IRB_header.html"/>
+            <param name="quality" value="high"/>
+            <embed src="#{resource['swf:irb_header.swf']}" quality="high" width="900" height="180" name="tech" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+        </object>
+    </div>
+    <div id="content">
+        <ui:insert name="content"/>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <span class="footer_left">Copyright &copy; 1996-2012 Informationssysteme Ralf Bensmann.</span>
+        <span class="footer_center">
+            <a target="_blank" href="http://blog.bensmann.com/"><h:graphicImage alt="Posterous" library="images" name="logo_posterous.gif"/></a>
+            <a target="_blank" href="http://www.twitter.com/ralfbn"><h:graphicImage alt="Twitter" library="images" name="logo_twitter.gif"/></a>
+            <a target="_blank" href="https://www.xing.com/companies/informationssystemeralfbensmann/"><h:graphicImage alt="XING" library="images" name="logo_xing.gif"/></a>
+            <a target="_blank" href="http://www.facebook.com/pages/Informationssysteme-Ralf-Bensmann/109231032432556"><h:graphicImage alt="Facebook" library="images" name="logo_facebook.gif"/></a>
+            <a target="_blank" href="http://www.linkedin.com/in/ralfbensmann"><h:graphicImage alt="LinkedIn" library="images" name="logo_linkedin.gif"/></a>
+        </span>
+        <span class="footer_right">
+            <h:outputLink title="Kontakt" value="contact.xhtml">Kontakt</h:outputLink>
+            <h:outputLink title="Impressum" value="imprint.xhtml">Impressum</h:outputLink>
+        </span>
+    </div>
+    <rbe:googleanalytics/>
+</h:body>
+</html>
